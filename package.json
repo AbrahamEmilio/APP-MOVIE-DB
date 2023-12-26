@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AbrahamEmilio/APP-MOVIE-DB/issues"
   },
-  "homepage": "https://github.com/AbrahamEmilio/APP-MOVIE-DB#readme"
+  "homepage": "https://github.com/AbrahamEmilio/APP-MOVIE-DB#readme",
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
 }
