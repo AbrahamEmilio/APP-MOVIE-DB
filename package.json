@@ -1,0 +1,20 @@
+{
+  "name": "app-movie-db",
+  "version": "1.0.0",
+  "description": "Aplicación Movie DB",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbrahamEmilio/APP-MOVIE-DB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbrahamEmilio/APP-MOVIE-DB/issues"
+  },
+  "homepage": "https://github.com/AbrahamEmilio/APP-MOVIE-DB#readme"
+}
