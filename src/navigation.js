@@ -39,7 +39,12 @@ function categoryPage(){
 };
 
 function homePage(){
-    console.log('estamos en home')
     getPopularMoviesPreview();
     getCategories();
+
+    headerSection.classList.remove('header-container--long');
+    headerSection.style.background = '';
+    headerCategoryTitle.classList.add('inactive')
+    arrowBtn.classList.add('inactive')
+    searchForm.classList.remove('inactive');
 };

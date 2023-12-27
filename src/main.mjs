@@ -16,7 +16,7 @@ export const getPopularMoviesPreview = async() => {
 
     const movies = data.results;
 
-    const trendingContainer = document.querySelector('.trendingPreview-movieList')
+    const trendingMoviesPreviewList = document.querySelector('.trendingPreview-movieList')
 
     movies.forEach((movie) => {
         const movieContainer = document.createElement('div')
@@ -28,7 +28,7 @@ export const getPopularMoviesPreview = async() => {
         movieImg.src = `https://image.tmdb.org/t/p/w300/${movie.poster_path}`;
 
         movieContainer.append(movieImg)
-        trendingContainer.append(movieContainer)
+        trendingMoviesPreviewList.append(movieContainer)
     })
 }
 
@@ -36,7 +36,7 @@ export const getCategories = async() => {
     const { data } = await api(`genre/movie/list?api_key=${API_KEY}`);
 
     const categories = data.genres;
-    const categoriesContainer = document.querySelector('.categoriesPreview-list')
+    const categoriesPreviewList = document.querySelector('.categoriesPreview-list')
 
     categories.forEach((categorie) => {
         const categorieContainer = document.createElement('div');
@@ -48,7 +48,7 @@ export const getCategories = async() => {
         categorieTitle.textContent = categorie.name;
 
         categorieContainer.append(categorieTitle);
-        categoriesContainer.append(categorieContainer);
+        categoriesPreviewList.append(categorieContainer);
     })
 }
 
